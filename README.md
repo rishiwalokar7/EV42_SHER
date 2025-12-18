@@ -48,13 +48,6 @@ Diabetes
 Heart Attack
 Malaria
 
-## Repository Structure
-EV42_SHER/
-- ENVISION.pdf
-- sher.csv
-- README.md
-
----
 
 ## Future Scope
 - More diseases
