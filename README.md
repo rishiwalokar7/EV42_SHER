@@ -62,7 +62,7 @@ EV42_SHER/
 - Clinical decision support tools
 
 ---
-
+NOTE ::: Also checkout round 2 clarification.md 
 ## License
 MIT License
 
