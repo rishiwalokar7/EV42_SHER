@@ -100,25 +100,25 @@ cd EV42_SHER
 
 pip install -r req.txt
 python -m streamlit run app.py
-## 📊 Expected Output
 
-- Interactive health risk dashboard
-- Disease risk predictions
-- Visual insights and charts
-- User-friendly interface for analysis
+expected_output:
+  - Interactive health risk dashboard
+  - Disease risk predictions
+  - Visual insights and charts
+  - User-friendly interface for analysis
 
----
+future_enhancements:
+  - Integration of explainable AI (SHAP / LIME)
+  - Support for more disease categories
+  - Deployment on cloud platforms
+  - Real-time data ingestion
+  - Model fairness and bias evaluation
 
-## 🔮 Future Enhancements
+license:
+  name: MIT License
+  description: This project is released under the MIT License.
 
-- Integration of explainable AI (SHAP / LIME)
-- Support for more disease categories
-- Deployment on cloud platforms
-- Real-time data ingestion
-- Model fairness and bias evaluation
-
-## License
-This project is released under the MIT License.
-
-## 🙌 Acknowledgements
-This project uses open healthcare datasets and modern ML techniques to promote early disease detection and preventive healthcare.
+acknowledgements:
+  description: >
+    This project uses open healthcare datasets and modern ML techniques
+    to promote early disease detection and preventive healthcare.
