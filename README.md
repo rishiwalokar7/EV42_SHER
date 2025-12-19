@@ -91,16 +91,6 @@ Contains all required Python libraries needed to run the project.
 
 ---
 
-## 🚀 How to Run the Project
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/rishiwalokar7/EV42_SHER.git
-cd EV42_SHER
-
-pip install -r req.txt
-python -m streamlit run app.py
-
 expected_output:
   - Interactive health risk dashboard
   - Disease risk predictions
@@ -122,3 +112,14 @@ acknowledgements:
   description: >
     This project uses open healthcare datasets and modern ML techniques
     to promote early disease detection and preventive healthcare.
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/rishiwalokar7/EV42_SHER.git
+cd EV42_SHER
+
+pip install -r req.txt
+python -m streamlit run app.py
+
