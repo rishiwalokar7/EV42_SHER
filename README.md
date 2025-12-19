@@ -1,153 +1,124 @@
-#🧠 EV42_SHER – Smart Health Early Risk Prediction
 
-##EV42_SHER (Smart Health Early Risk Prediction) is an AI-powered healthcare analytics project designed to predict early risk of chronic diseases by analyzing clinical and health data. It uses machine learning models to identify risk patterns and provide insights for preventive action.
+---
 
-#📂 Repository Structure
-EV42_SHER/
-├── DATASETS/
-├── Model/
-├── Preprocess/
-├── ENVISION.pdf
-├── README.md
-├── app.py
-├── req.txt
+## 📘 Project Overview
 
-#📘 Project Overview
+Healthcare providers often struggle with **late diagnosis of diseases** such as diabetes, cardiovascular disorders, pneumonia, malaria, and other silent health conditions.  
+Traditional rule-based systems fail to detect complex patterns hidden in large datasets.
 
-This project aims to solve the challenge of late detection of chronic diseases (such as diabetes, cardiovascular conditions, pneumonia, malaria, etc.) by building predictive models using health data. It combines data preprocessing, ML modeling and streamlit-powered visualization.
+**EV42_SHER addresses this challenge by:**
+- Using **machine learning** for early risk prediction
+- Identifying contributing health factors
+- Supporting **preventive and proactive healthcare decisions**
+- Providing an **interactive visualization dashboard** using Streamlit
 
-##The current roadmap includes:
+---
 
-Collection of raw health datasets
+## 🛣️ Project Roadmap
 
-Data preprocessing & feature engineering
+- 📥 Collection of raw health datasets  
+- 🧹 Data preprocessing & feature engineering  
+- 🤖 Machine learning model development  
+- 📊 Visualization and dashboard creation  
+- 🧪 Model evaluation and optimization  
 
-Machine learning model training
+---
 
-Integration into a web app
+## 🗃️ DATASETS/
 
-Explainable insights for preventive care
+This folder contains all datasets used in the project.
 
-#📝 See ENVISION.pdf for a visual project overview and problem statement. 
-GitHub
+**Purpose:**
+- Store raw patient health data
+- Store cleaned and transformed datasets used for training
+- Enable reproducible experiments
 
-#📁 Folder Breakdown
-##🗃️ DATASETS/
+**Typical formats:**
+- `.csv`
+- `.xlsx`
 
-This folder should contain all raw and processed datasets used for training and evaluation.
+---
 
-Typical expected files:
+## 🧹 Preprocess/
 
-CSV datasets (e.g., patient records, health indicators)
+This folder contains scripts responsible for **data cleaning and transformation**.
 
-sher.csv — likely the main dataset containing labeled patient data for supervised learning. 
-GitHub
+**Functions may include:**
+- Handling missing values
+- Encoding categorical variables
+- Feature scaling and normalization
+- Dataset splitting
 
-#✅ Purpose: Store raw and cleaned data for model building and testing.
+---
 
-##🏗️ Preprocess/
+## 🤖 Model/
 
-Contains preprocessing scripts.
+This directory contains **machine learning-related code**.
 
-What you’d expect:
+**Includes:**
+- Model training scripts
+- Model evaluation logic
+- Saved trained models (e.g., `.pkl`, `.joblib`)
+- Performance metrics
 
-Scripts to clean and transform the raw data (e.g., handling missing values, scaling, encoding)
+---
 
-Feature selection or transformation pipelines
+## 🪟 Streamlit Application (`app.py`)
 
-➡️ Example file:
+`app.py` is the **main entry point** of the project.
 
-preprocess.py
+**It enables:**
+- Loading trained ML models
+- Accepting user health inputs
+- Predicting disease risk
+- Displaying results using interactive charts and metrics
 
+---
 
-🧹 Purpose: Prepare raw data to be model-ready.
+## 📄 ENVISION.pdf
 
-#🤖 Model/
+This document provides:
+- Problem statement
+- Project vision
+- Conceptual architecture
+- Motivation and objectives
 
-This directory holds the machine learning model training and inference code.
+---
 
-Typical files/functionality:
+## 📦 Requirements (`req.txt`)
 
-Model architecture or training script (e.g., train_model.py)
+Contains all required Python libraries needed to run the project.
 
-Saved model files (like .pkl, .joblib, or .h5)
+---
 
-Evaluation metrics scripts
+## 🚀 How to Run the Project
 
-#🎯 Purpose: Build, train, validate, save and load predictive models.
-
-##📄 ENVISION.pdf
-
-A PDF overview of the project concept, problem statement, and planned workflow. 
-GitHub
-
-#🧪 req.txt
-
-Contains all Python dependencies required to run the project:
-
-pip install -r req.txt
-
-#🪟 app.py
-
-This is the main Streamlit application — the UI for interacting with the model.
-
-The app likely:
-
-Loads the preprocessed data and ML model
-
-Takes user inputs (health features)
-
-Predicts disease risk with a visual output
-
-Shows charts, metrics or risk levels
-
-You run this file to see the interactive dashboard.
-
-#🚀 How to Run This Project
-🔹 1. Clone the repo
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/rishiwalokar7/EV42_SHER.git
 cd EV42_SHER
 
-🔹 2. Install dependencies
-
-Make sure you have Python 3.7+ installed.
-
 pip install -r req.txt
-
-🔹 3. Start the Streamlit App
 python -m streamlit run app.py
+## 📊 Expected Output
 
+- Interactive health risk dashboard
+- Disease risk predictions
+- Visual insights and charts
+- User-friendly interface for analysis
 
-This will open the Smart Health Early Risk Prediction dashboard in your browser.
+---
 
-#🧠 Example Usage
+## 🔮 Future Enhancements
 
-Once the Streamlit app loads, you should be able to:
+- Integration of explainable AI (SHAP / LIME)
+- Support for more disease categories
+- Deployment on cloud platforms
+- Real-time data ingestion
+- Model fairness and bias evaluation
 
-Upload or select dataset
+## License
+This project is released under the MIT License.
 
-Choose health indicators
-
-View risk predictions
-
-Explore model output & visualizations
-
-#🛠️ Notes for Developers
-
-Add documentation and tests for each script in Model/ and Preprocess/
-
-Ensure consistent dataset schema across runs
-
-Save trained models for faster inference in Streamlit
-
-Integrate explainability tools (SHAP, LIME) for risk factor visualization
-
-#📜 License
-
-This project uses the MIT License — see the license in the repo. 
-GitHub
-
-🧾 Acknowledgements
-
-This project leverages open health data sources and machine learning best practices to predict early health risks.
-
+## 🙌 Acknowledgements
+This project uses open healthcare datasets and modern ML techniques to promote early disease detection and preventive healthcare.
